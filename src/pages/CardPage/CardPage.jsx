@@ -70,6 +70,7 @@ export const CardPage = () => {
               .trim()}
             onChange={handleChange}
             maxLength="19"
+            minLength="19"
             required
           />
           <input
@@ -83,6 +84,7 @@ export const CardPage = () => {
             placeholder="MM/YY"
             onChange={handleChange}
             maxLength={5}
+            minLength={5}
             required
           />
           <input
@@ -91,6 +93,7 @@ export const CardPage = () => {
             name="cvc"
             placeholder="CVC"
             maxLength="3"
+            minLength="3"
             value={formData.cvc}
             onChange={handleChange}
             required
