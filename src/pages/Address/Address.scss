@@ -1,0 +1,40 @@
+.address {
+  margin-top: 130px;
+
+  &__card_wrapper {
+    position: relative;
+  }
+
+  &__card_pointer {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__info_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+
+  &__info {
+    font-size: 20px;
+  }
+
+  &__map {
+    position: relative;
+  }
+
+  &__pointer {
+    position: absolute;
+    font-size: 70px;
+  }
+}
