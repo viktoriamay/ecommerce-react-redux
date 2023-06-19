@@ -22,7 +22,7 @@ export const Order = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/address');
+    navigate('/card');
   };
 
   return (
