@@ -1,0 +1,38 @@
+.main_page {
+  height: 100vh;
+  background-image: url('./img/main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &__title {
+    position: relative;
+    margin-bottom: 198px;
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    &::before {
+      content: '23';
+      position: absolute;
+      top: -200%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-family: 'Antic Didone';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 288px;
+      line-height: 343px;
+      text-align: right;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.26);
+    }
+  }
+}
