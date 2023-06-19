@@ -54,8 +54,8 @@ export const CardPage = () => {
             className="order__input"
             type="text"
             name="name"
-            value={formData.name}
             placeholder="CARD HOLDER"
+            value={formData.name}
             onChange={handleChange}
             required
           />
