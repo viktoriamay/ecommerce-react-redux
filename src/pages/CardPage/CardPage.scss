@@ -1,0 +1,28 @@
+.card_page {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  &__form {
+    margin-top: 300px;
+  }
+  
+  &__template_info__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__template {
+    background-color: rgb(68, 69, 142);
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 30px;
+  }
+}
