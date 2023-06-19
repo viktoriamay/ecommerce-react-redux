@@ -18,14 +18,18 @@ export const Order = () => {
       ...prevState,
       [name]: value,
     }));
-    navigate('/card')
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate('/address');
   };
 
   return (
     <section className="order  route_section">
       <h1 className="title cart__title">Customer Info</h1>
 
-      <form onSubmit={handleChange} className="order__form">
+      <form onSubmit={handleSubmit} className="order__form">
         <input
           className="order__input"
           type="text"
@@ -35,6 +39,15 @@ export const Order = () => {
           value={formData.name}
             onChange={handleChange}
           required
+
+          // type="text"
+          //   name="cardNumber"
+          //   placeholder="CARD NUMBER"
+          //   value={formData.cardNumber
+          //     .replace(/\s/g, '')
+          //     .replace(/(\d{4})/g, '$1 ')
+          //     .trim()}
+          //   onChange={handleChange}
         />
 
         <input
