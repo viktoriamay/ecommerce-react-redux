@@ -83,3 +83,21 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 460px) {
+  .cart__checkout {
+    flex-direction: column;
+gap: 2rem;
+
+  }
+}
+@media screen and (max-width: 390px) {
+  .cart__card__buttons {
+    bottom: 32px;
+    right: 20px
+
+  }
+  .cart__card__info_wrapper {
+    gap: 1rem;
+  }
+}

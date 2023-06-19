@@ -8,3 +8,11 @@
     gap: 3rem;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .sort__buttons {
+    gap: 1.5rem;
+
+
+  }
+}

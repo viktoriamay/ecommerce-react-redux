@@ -26,3 +26,29 @@
     padding: 30px;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .card_page {
+    flex-direction: column;
+gap: 2rem;
+
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  .card_page__template {
+    width: 350px;
+    height: 200px;
+
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .card_page__template {
+    width: 270px;
+    height: 180px;
+
+  }
+}

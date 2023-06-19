@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5rem;
     margin-top: 3rem;
   }
 
@@ -38,3 +39,18 @@
     font-size: 70px;
   }
 }
+
+@media screen and (max-width: 410px) {
+  .address__info_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+
+  .address__info {
+    text-align: center;
+  }
+}
+

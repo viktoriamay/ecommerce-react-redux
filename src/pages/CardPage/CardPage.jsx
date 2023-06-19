@@ -8,7 +8,7 @@ export const CardPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     cardNumber: '',
-    date: '01/23',
+    date: '',
     cvc: '',
   });
 

@@ -7,6 +7,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #f9fafc;
+  overflow-x: hidden;
 }
 
 a {
@@ -39,9 +40,17 @@ input {
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
-  line-height: 75px;
+  // line-height: 75px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 408px) {
+  .title {
+    font-size: 3rem;
+
+
+  }
 }
 
 .route_section {
