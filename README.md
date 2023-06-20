@@ -50,6 +50,7 @@
     - useNavigate
     - useSelector
     - useReducer
+    - useParams
 
 
 
