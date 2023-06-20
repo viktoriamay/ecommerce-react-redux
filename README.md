@@ -13,7 +13,7 @@
 5. Props
 6. SCSS
 7. REST API
-8. Git (GitHub Pages)
+8. Git, GitHub
 9. Axios
 
 ## Установки
