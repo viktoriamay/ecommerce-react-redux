@@ -27,7 +27,7 @@ export const Cart = () => {
             <ul className="cart__card__list">
               {cart.map((item) => (
                 <li key={item.id} className="cart__card_item">
-                  <Link to={`products/${item.id}`} className="cart__card">
+                  <Link to={`/products/${item.id}`} className="cart__card">
                     <div className="cart__card__image_wrapper">
                       <img src={item.image} alt="" />
                     </div>
@@ -67,10 +67,15 @@ export const Cart = () => {
         </section>
       ) : (
         <div className="cart__empty">
-          <div className="title cart__title">There is nothing here</div>
-          <Link className="product_card__button cart__checkout_button" to={'/'}>
-            To the main page
-          </Link>
+          <div className="container">
+            <div className="title cart__title">There is nothing here</div>
+            <Link
+              className="product_card__button cart__checkout_button"
+              to={'/'}
+            >
+              To the main page
+            </Link>
+          </div>
         </div>
       )}
     </>

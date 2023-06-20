@@ -23,7 +23,7 @@ export const Sort = () => {
     setSortName(newOrder);
     dispatch(sortProductsByName(newOrder));
   };
-  
+
   return (
     <div className="sort">
       <div className="sort__buttons">
@@ -31,13 +31,13 @@ export const Sort = () => {
           className="sort__button product_card__button cart__checkout_button"
           onClick={handleSortPrice}
         >
-          Sort by price
+          Sort by price {sortPrice === 'asc' ? '▲' : '▼'}
         </button>
         <button
           className="sort__button product_card__button cart__checkout_button"
           onClick={handleSortName}
         >
-          Sort by name
+          Sort by name {sortName === 'asc' ? '▲' : '▼'}
         </button>
       </div>
     </div>

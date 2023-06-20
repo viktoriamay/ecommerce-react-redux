@@ -13,7 +13,7 @@ export const Card = ({ product }) => {
 
   return (
     <div className="product_card">
-      <Link to={`/product/${product.id}`} className="product_card__link">
+      <Link to={`/products/${product.id}`} className="product_card__link">
         <div className="product_card__img_wrapper">
           <img src={product.image} alt="" />
         </div>
