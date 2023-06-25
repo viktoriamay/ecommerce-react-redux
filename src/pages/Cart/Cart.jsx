@@ -66,8 +66,8 @@ export const Cart = () => {
           </div>
         </section>
       ) : (
-        <div className="cart__empty">
           <div className="container">
+        <div className="cart__empty">
             <div className="title cart__title">There is nothing here</div>
             <Link
               className="product_card__button cart__checkout_button"
@@ -81,3 +81,11 @@ export const Cart = () => {
     </>
   );
 };
+
+
+export function absentNumber(array) {
+  const n = array.length + 1;
+  const totalSum = (n * (n + 1)) / 2; // сумма арифметической прогрессии от 1 до n
+  const sum = array.reduce((acc, curr) => acc + curr, 0); // сумма значений массива
+  return totalSum - sum; // разность будет равна отсутствующему числу
+}
